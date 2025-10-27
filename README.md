@@ -76,7 +76,8 @@ src/
 ## 🎨 Design System
 
 ### Colors
-- **Primary**: Indigo (600/700 variants)
+- **Primary**: Orange (500/600 variants) - Brand color from logo
+- **Accent**: Orange gradient (from-orange-500 to-orange-600)
 - **Secondary**: Gray scale (50-900)
 - **Success**: Green (for available status)
 - **Warning**: Yellow (for busy status)

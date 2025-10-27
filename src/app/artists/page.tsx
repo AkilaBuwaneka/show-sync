@@ -5,7 +5,7 @@ import { mockArtists } from '@/data/mockArtists';
 import ArtistCard from '@/components/ui/ArtistCard';
 import { Artist } from '@/types';
 
-const genres = ['All', 'Indie Rock', 'Electronic', 'Jazz', 'Folk', 'Synthwave', 'Blues', 'Alternative', 'World Music'];
+const genres = ['All', 'Pop', 'Rock', 'Pop/Rock', 'Contemporary', 'Baila', 'Alternative', 'Classic Rock', 'Progressive Rock', 'Rock/Metal', 'Hip Hop/Rap'];
 const availabilityOptions = ['All', 'Available', 'Busy', 'Unavailable'];
 
 export default function Artists() {

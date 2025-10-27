@@ -1,5 +1,6 @@
 import { Artist } from '@/types';
 import Button from './Button';
+import Image from 'next/image';
 
 interface ArtistCardProps {
   artist: Artist;
@@ -30,10 +31,14 @@ export default function ArtistCard({ artist, onSelect, isSelected }: ArtistCardP
 
   return (
     <div className={`bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg ${isSelected ? 'ring-2 ring-orange-500' : ''}`}>
-      <div className="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
-        <div className="text-white text-6xl font-bold">
-          {artist.name.charAt(0)}
-        </div>
+      <div className="relative h-48 bg-gray-100">
+        <Image
+          src={artist.image || '/images/music.jpg'}
+          alt={artist.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       <div className="p-6">
         <div className="flex items-start justify-between mb-2">

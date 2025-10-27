@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ShowSync - Connect Artists & Event Organizers",
   description: "A platform for organizing shows and connecting artists with event organizers",
+  icons: {
+    icon: '/images/logo/logo.svg',
+  },
 };
 
 export default function RootLayout({

@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const navigation = [
@@ -19,16 +18,7 @@ export default function Header() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="flex items-center space-x-3">
-                <div className="bg-gray-800 rounded-lg p-2 shadow-sm">
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="ShowSync Logo"
-                    width={40}
-                    height={40}
-                    className="h-6 w-auto"
-                  />
-                </div>
+              <Link href="/" className="flex items-center">
                 <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
                   ShowSync
                 </span>
